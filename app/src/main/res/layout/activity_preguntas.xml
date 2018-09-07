@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_preguntaActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pregunta"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_operandoUno"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_operador"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_operandoDos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:textSize="40dp"
+                android:id="@+id/radio_uno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="RESPUESTA 1" />
+
+            <RadioButton
+                android:id="@+id/radio_dos"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESPUESTA 2" />
+
+            <RadioButton
+                android:id="@+id/radio_tres"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESPUESTA 3" />
+
+            <RadioButton
+                android:id="@+id/radio_cuatro"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESPUESTA 4" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siguiente" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
